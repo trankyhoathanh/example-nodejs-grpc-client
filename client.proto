@@ -1,0 +1,15 @@
+syntax = "proto3";
+package calculatorPackage;
+ 
+service SumService {
+    rpc sumTotal(sumInput) returns (sumOutput) {}
+}
+ 
+message sumInput {
+    int32 paramsa = 1;
+    int32 paramsb = 2;
+}
+
+message sumOutput {
+    int32 total = 1;
+}
